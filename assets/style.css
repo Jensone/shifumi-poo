@@ -24,8 +24,34 @@ main {
 }
 
 aside {
+    position: relative;
     background-color: #fff;
     border-right: 1px solid #ccc;
+    overflow-y: scroll;
+}
+
+aside table {
+    width:90%;
+}
+
+table tbody tr {
+    padding: 1rem;
+    border-bottom: 1px solid #999;
+}
+
+.history {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0.25rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,.055);
+}
+
+aside table thead tr, aside table tbody tr {
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
@@ -68,6 +94,7 @@ input[type="submit"] {
     background-color: #fff;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    text-transform: capitalize;
 }
 
 input[type="submit"]:hover {

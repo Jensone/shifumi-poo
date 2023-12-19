@@ -5,12 +5,14 @@
 $conn = new PDO('sqlite:shifumi.db');
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+$query = $conn->query("DROP TABLE IF EXISTS Story;");
+
 $sql = "CREATE TABLE IF NOT EXISTS Story (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     result VARCHAR(25) NOT NULL,
     computerChoice VARCHAR(25) NOT NULL,
     userChoice VARCHAR(25) NOT NULL,
-    date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    date DATETIME
 );";
 
 $conn->exec($sql);
