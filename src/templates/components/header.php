@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://api.iconify.design/fluent-emoji-flat:beaming-face-with-smiling-eyes.svg" type="image/x-icon">
     <title>Shifumi PHP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="/assets/main.js" defer></script>
 </head>
 
 <body>
@@ -23,6 +24,7 @@
                     <tr>
                         <td>Le résultat</td>
                         <td>Vous avez joué</td>
+                        <td>Dernière partie</td>
                     </tr>
                 </thead>
                 <tbody>
