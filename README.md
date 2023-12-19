@@ -9,9 +9,10 @@ shifumi.db
 /assets
     - style.css
 /src
+    - autoloading.php
     /models
         - Game.php
-        - Stroy.php
+        - Story.php
     /utilities
         - Database.php
     /templates
