@@ -31,6 +31,10 @@ abstract class Model
         }
     }
 
-
+    public function countAll($table): int
+    {
+        $query = $this->pdo->query("SELECT COUNT(*) FROM $table");
+        return $query->fetchColumn();
+    }
 
 }
