@@ -4,7 +4,7 @@
 <form action="" method="post">
     <?php
     foreach ($choices as $choice) {
-        echo '<input type="submit" name="choice" value="' . $choice . '" class="choice" data-choice="' . $choice . '">';
+        echo '<input type="submit" name="choice" value="' . $choice . '" class="choice ' . $choice . '" data-choice="' . $choice . '">';
     }
     ?>
 </form>

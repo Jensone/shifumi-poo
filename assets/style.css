@@ -121,6 +121,10 @@ input[type="submit"]:hover {
     text-decoration: none;
 }
 
+.feu { background-color: #e83a3a !important; }
+.eau { background-color: #3ab1e8 !important; }
+.herbe { background-color: #3de83a !important; }
+
 /* Medias Queries */
 @media screen and (max-width: 768px) {
     .container {

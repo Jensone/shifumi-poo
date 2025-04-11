@@ -1,3 +1,8 @@
+<?php 
+use Models\Story;
+$count = (new Story())->countAll('Story');
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,17 +24,22 @@
             <div class="history">
                 <h4>Historique</h4>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Le résultat</td>
-                        <td>Vous avez joué</td>
-                        <td>Dernière partie</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php include_once __DIR__ . '/_partials/_stories.php'; ?>
-                </tbody>
-            </table>
+            <?php 
+            if ($count > 0): ?>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Le résultat</td>
+                            <td>Vous avez joué</td>
+                            <td>Dernière partie</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php include_once __DIR__ . '/_partials/_stories.php'; ?>
+                    </tbody>
+                </table>
+            <?php else: ?>
+                <h4>Aucune partie enregistrée</h4>
+            <?php endif; ?>
         </aside>
         <main>

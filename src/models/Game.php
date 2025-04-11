@@ -4,7 +4,7 @@ namespace Models;
 
 class Game
 {
-    public array $choices = ['pierre', 'papier', 'ciseaux'];
+    public array $choices = ['feu', 'herbe', 'eau'];
     public string $playerChoice;
     public string $computerChoice;
 
@@ -22,11 +22,8 @@ class Game
     {
         $result = [];
         $computer = $this->computerChoice();
-        if (
-            $computer == 'pierre' && $user == 'pierre' ||
-            $computer == 'papier' && $user == 'papier' ||
-            $computer == 'ciseaux' && $user == 'ciseaux'
-        ) {
+        if ($computer == $user) 
+        {
             $result = [
                 'result' => 'Match nul',
                 'computer' => $computer
